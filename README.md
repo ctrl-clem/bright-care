@@ -4,12 +4,13 @@ Imagine a warm and inviting website where parents and nannies come together to c
 ## Core Features 🌟
 
 - User Authentication System
+    - Exploring OOP PHP vs. Procedural PHP
     - Separate portals for parents and nannies
     - Secure login and registration
     - Profile management
 - Nanny Profiles
     - Experience and qualifications
-    - Availability calendar
+    - Reviews from parents
     - Hourly rates and services offered
 - Search and Filter System
     - Location-based search
@@ -21,6 +22,7 @@ Imagine a warm and inviting website where parents and nannies come together to c
 
 This project serves as an excellent introduction to essential PHP concepts:
 
+-OOP vs. Procedural PHP
 - Database Management
     - MySQL integration
     - CRUD operations
