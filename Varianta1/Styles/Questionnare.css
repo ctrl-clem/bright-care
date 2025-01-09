@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5fa;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Question Box Styles */
+.question-box {
+    background: linear-gradient(135deg, #f7f0fc, #e0d7f1);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.question-box:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.question p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333333;
+    font-weight: 500;
+}
+
+/* Radio and Checkbox Styles */
+.radio-container, .checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333333;
+}
+
+.radio-container input, .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #6a1b9a;
+}
+
+.checkbox-container .checkmark {
+    border-radius: 4px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #6a1b9a;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after,
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radio-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    background: white;
+}
+
+/* Textarea Style */
+textarea {
+    width: 90%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: none;
+    background-color: #f8f3fa;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #6a1b9a;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+    text-align: center;
+}
+
+button {
+    padding: 15px 40px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(106, 27, 154, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #7b2fb3;
+    box-shadow: 0 8px 25px rgba(106, 27, 154, 0.6);
+}

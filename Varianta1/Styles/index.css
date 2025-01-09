@@ -1,0 +1,152 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #7b2fb3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo h1 {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    font-family: serif;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c0a4d1;
+}
+
+/* Home Section */
+.home {
+    background: url(../Photos/Home.png) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-size: contain;
+    background-color: #cb6ce6 ;
+
+}
+
+
+.home .welcome-text h2 {
+    font-size: 3rem;
+}
+
+.home .welcome-text p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.home .btn {
+    background-color: #00ced1;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.home .btn:hover {
+    background-color: #008b8b;
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #c2dcfd;
+
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-family:  serif;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #555;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 4rem 6rem;
+    text-align: center;
+    background-color: #ffea6f;
+}
+
+.reviews h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 30%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h3 {
+    margin-bottom: 1rem;
+    color: #9b5ed3;
+}
+
+.review-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: #7b2fb3;
+    color: white;
+}

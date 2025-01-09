@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    /*display: flex;*/
+    justify-content: center;
+    /*align-items: center;*/
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #7b2fb3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo h1 {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    font-family: serif;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c0a4d1;
+}
+/* Containerul principal al profilului */
+.profile-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+/* Cardul profilului */
+.profile-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 12000px; /* Lățimea cardului este mărită */
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Secțiunea de antet (poză + nume) */
+.profile-header {
+    display: flex;
+    align-items: center;
+    background-color: #cb6ce6;
+    padding: 30px;
+    color: #fff;
+}
+
+.profile-image{
+    display: inline-block;
+    position: relative;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 5px solid #fff;
+}
+
+.profile-name h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.profile-name h2 {
+    margin: 10px 0 0;
+    font-size: 22px;
+    color: #e6f2ff;
+}
+
+/* Conținutul principal al profilului */
+.profile-content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Două coloane pentru un aspect mai modern */
+    grid-gap: 40px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    font-size: 22px;
+    color: #333;
+    border-bottom: 2px solid #cb6ce6;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.section p, .skills-list li, .cv-list li, .contact-list li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Listă de abilități și CV */
+.skills-list, .cv-list, .contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li, .cv-list li, .contact-list li {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Reviewuri stilizate */
+.reviews-section .review {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 5px solid #cb6ce6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.reviews-section .review p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+/* Stiluri pentru informațiile de contact */
+.contact-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-list li strong {
+    color: #cb6ce6;
+}
+
+.button {
+    background: #6a1b9a;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Hover effect */
+.button:hover {
+    background: #ab6edc;
+
+}
+
+
+.file-label {
+    background: #6a1b9a;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 180px;
+}
+
+.file-label:hover {
+    background: #ab6edc;
+}
+
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: #f3f0f5; /* Light Purple */
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popup h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.popup-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.popup-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.popup-button.confirm {
+    background-color: #6a0dad;
+    color: white;
+}
+
+.popup-button.confirm:hover {
+    background-color: #5a009d;
+}
+
+.popup-button.cancel {
+    background-color: #f5f5f5;
+    color: #6a0dad;
+    border: 1px solid #6a0dad;
+}
+
+.popup-button.cancel:hover {
+    background-color: #e8e0f1;
+}
+
+
+
+
+

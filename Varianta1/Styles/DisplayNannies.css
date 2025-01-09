@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f0ff; /* Light purple background */
+    margin: 0;
+    padding: 0;
+    color: #4b0082; /* Dark purple for text */
+}
+nav {
+    background-color: #7b2fb3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo h1 {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    font-family: serif;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c0a4d1;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    background-color: #e6e0f8; /* Soft lavender background */
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #6a0dad; /* Deep purple heading */
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    background-color: #6a0dad; /* Primary purple */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+    background-color: #7b1fa2; /* Slightly darker purple */
+}
+
+/* Profiles section */
+.profiles {
+    width: 75%;
+    padding: 20px;
+}
+
+.profiles h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4b0082; /* Deep purple for titles */
+}
+
+/* Grid for profile cards */
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Profile card design */
+.profile-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #f0e5ff;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #e6e0f8;
+}
+
+.profile-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4b0082; /* Deep purple for names */
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #6a0dad; /* Lighter purple for info */
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profiles {
+        width: 100%;
+    }
+}
+
+
+
